@@ -15,9 +15,9 @@ These methods were applied to the COP and executed on the IBM quantum devices.
 **Data**
 - This folder contains the corresponding COP datasets
 - For the TSP: 
-    - The 'Matrices.txt' file contains all 4 matrices are used in the VQE and the QAOA. The readInData() function reads the .txt file and outputs a 4 by 4 array corresponding to each matrix. The dimension of these matrices are: 3, 4, 5 and 6. 
+    - The 'Matrices.txt' file contains all the matrices that are used in the VQE and the QAOA. The readInData() function reads the .txt file and outputs an array corresponding to each matrix.  
     - These dataset follow the [TSPLIB](http://elib.zib.de/pub/mp-testdata/tsp/tsplib/tsp/index.html) formatting convension. Furthermore, these datasets were randomly generated.
-    - The 'optimal.txt' file contains the initial starting point corresponding to 4 matrices used in the VQE and QAOA. The optimal() function reads the .txt file and outputs a 4 by 4 array that corresponds to each initial point of each matrix. 
+    - The 'optimal.txt' file contains the initial starting point corresponding to the matrices used in the VQE and QAOA. The optimal() function reads the .txt file and outputs an array that corresponds to each initial point of each matrix. 
 - For the QAP:
     - The datasets labelled "made#.csv" are randomly generated QAP instances, and the number correlates to the number of facilities in the problem (the dimensions of the two matrices in the CSV file). The format of the CSV files follows that of the datasets available in [QAPLIB](https://www.opt.math.tugraz.at/qaplib/).
     - The datasets in the VQE and QAOA folders are the initial points used in the warm start approach taken in the papers listed. Each initial point corresponds to the QAP instance of the same size referenced in the name.
@@ -28,9 +28,9 @@ These methods were applied to the COP and executed on the IBM quantum devices.
 - Classical algorithms perform better than the VQE in terms of computational time. The figure below illustrates that the performance of the various employed quantum devices are consistent in terms of computational time, with the simulator performing the best. There is no distinct correlation between problem size and computational time for quantum devices. However, this claim is made with a limited number of problem instances.
 - Noisy intermediate-scale quantum (NISQ) devices' low reliability is attributed to the high variability in physical characteristics such as error rates and coherence time. These attributes substantiate why there lacks a distinct relationship between the problem size and the computational time required to find a solution using the VQE algorithm.
 
-![VQE CPU times for the TSP](Travelling Salesman Problem/Results/Images/VQE_CPU.png)
+![VQE CPU times for the TSP](TravellingSalesmanProblem/Results/Images/VQE_CPU.png)
 
-![VQE CPU times for the QAP](Quadratic Assignment Problem/Results/VQE/VQE.jpg)
+![VQE CPU times for the QAP](QuadraticAssignmentProblem/Results/VQE/VQE.jpg)
 
 
 ## Findings
