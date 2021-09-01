@@ -28,9 +28,9 @@ These methods were applied to the COP and executed on the IBM quantum devices.
 - Classical algorithms perform better than the VQE in terms of computational time. The figure below illustrates that the performance of the various employed quantum devices are consistent in terms of computational time, with the simulator performing the best. There is no distinct correlation between problem size and computational time for quantum devices. However, this claim is made with a limited number of problem instances.
 - Noisy intermediate-scale quantum (NISQ) devices' low reliability is attributed to the high variability in physical characteristics such as error rates and coherence time. These attributes substantiate why there lacks a distinct relationship between the problem size and the computational time required to find a solution using the VQE algorithm.
 
-![VQE CPU times for the TSP](Travelling Salesman Problem/Results/Images/VQE_CPU.png)
+![VQE CPU times for the TSP](TravellingSalesmanProblem/Results/Images/VQE_CPU.png)
 
-![VQE CPU times for the QAP](Quadratic Assignment Problem/Results/VQE/VQE.jpg)
+![VQE CPU times for the QAP](QuadraticAssignmentProblem/Results/VQE/VQE.jpg)
 
 
 ## Findings
